@@ -8,13 +8,14 @@
   </head>
   <body>
     <div id="calculator">
+      <div id="previous"></div>
       <input type="text" id="display" />
       <div id="keys">
         <div class="keys">
           <button onclick="clearDisplay()">AC</button>
           <button onclick="sign()">+/-</button>
-          <button onclick="append('%')">%</button>
-          <button onclick="append('/')">/</button>
+          <button onclick="percent()">%</button>
+          <button onclick="append('/')">÷</button>
         </div>
         <div class="keys">
           <button onclick="append('7')">7</button>
