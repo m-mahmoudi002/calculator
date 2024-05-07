@@ -11,33 +11,53 @@
       <input type="text" id="display" />
       <div id="keys">
         <div class="keys">
-          <button onclick="clearDisplay()">AC</button>
-          <button onclick="sign()">+/-</button>
-          <button onclick="percent()">%</button>
-          <button onclick="appendOperator('/')">÷</button>
+          <button class="others" onclick="clearDisplay()">AC</button>
+          <button class="others" onclick="sign()">+/-</button>
+          <button class="others" onclick="percent()">%</button>
+          <button class="operator" onclick="appendOperator('/')">÷</button>
         </div>
         <div class="keys">
-          <button onclick="appendNumber('7')">7</button>
-          <button onclick="appendNumber('8')">8</button>
-          <button onclick="appendNumber('9')">9</button>
-          <button onclick="appendOperator('*')">*</button>
+          <button class="others" onclick="advanced('x^2')">x^2</button>
+          <button class="others" onclick="advanced('x^3')">x^3</button>
+          <button class="others" onclick="powerRoot('**')">x^y</button>
+          <button class="others" onclick="advanced('e^x')">e^x</button>
+          <button class="others" onclick="advanced('10^x')">10^x</button>
+          <button class="number" onclick="appendNumber('7')">7</button>
+          <button class="number" onclick="appendNumber('8')">8</button>
+          <button class="number" onclick="appendNumber('9')">9</button>
+          <button class="operator" onclick="appendOperator('*')">*</button>
         </div>
         <div class="keys">
-          <button onclick="appendNumber('4')">4</button>
-          <button onclick="appendNumber('5')">5</button>
-          <button onclick="appendNumber('6')">6</button>
-          <button onclick="appendOperator('-')">-</button>
+          <button class="others" onclick="advanced('sqrt')">√</button>
+          <button class="others" onclick="advanced('cube')">3√</button>
+          <button class="others" onclick="powerRoot('?')">y√</button>
+          <button class="others" onclick="advanced('ln')">ln</button>
+          <button class="others" onclick="advanced('log10')">log(x)10</button>
+          <button class="number" onclick="appendNumber('4')">4</button>
+          <button class="number" onclick="appendNumber('5')">5</button>
+          <button class="number" onclick="appendNumber('6')">6</button>
+          <button class="operator" onclick="appendOperator('-')">-</button>
         </div>
         <div class="keys">
-          <button onclick="appendNumber('1')">1</button>
-          <button onclick="appendNumber('2')">2</button>
-          <button onclick="appendNumber('3')">3</button>
-          <button onclick="appendOperator('+')">+</button>
+          <button class="others" onclick="advanced('!')">x!</button>
+          <button class="others" onclick="advanced('sin')">sin</button>
+          <button class="others" onclick="advanced('cos')">cos</button>
+          <button class="others" onclick="advanced('tan')">tan</button>
+          <button class="others" onclick="advanced('e')">e</button>
+          <button class="number" onclick="appendNumber('1')">1</button>
+          <button class="number" onclick="appendNumber('2')">2</button>
+          <button class="number" onclick="appendNumber('3')">3</button>
+          <button class="operator" onclick="appendOperator('+')">+</button>
         </div>
         <div class="keys">
+          <button class="others" onclick="advanced('sinh')">sinh</button>
+          <button class="others" onclick="advanced('cosh')">cosh</button>
+          <button class="others" onclick="advanced('tanh')">tanh</button>
+          <button class="others" onclick="advanced('pi')">π</button>
+          <button class="others" onclick="advanced('rand')">Rand</button>
           <button class="zero" onclick="appendNumber('0')">0</button>
-          <button onclick="appendNumber('.')">.</button>
-          <button onclick="performCalculation()">=</button>
+          <button class="number" onclick="appendNumber('.')">.</button>
+          <button class="operator" onclick="performCalculation()">=</button>
         </div>
       </div>
     </div>

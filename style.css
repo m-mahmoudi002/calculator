@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background: #373640;
 }
 #previous {
   display: block;
@@ -11,11 +11,10 @@ body {
   border: none;
 }
 #display {
-  display: block;
   color: white;
-  background-color: black;
+  background-color: #373640;
   height: 80px;
-  width: 320px;
+  width: 100%;
   font-size: 36px;
   border: none;
   text-align: right;
@@ -23,13 +22,26 @@ body {
 .keys {
   display: flex;
   align-items: center;
+  justify-content: end;
 }
 button {
   padding: 10px;
   font-size: 20px;
   width: 80px;
   height: 80px;
+
+  border: 0.5px solid #373640;
 }
 .zero {
   width: 160px;
+  background: #7e97a6;
+}
+.operator {
+  background: #b6f7c1;
+}
+.number {
+  background: #7e97a6;
+}
+.others {
+  background: #63686e;
 }
