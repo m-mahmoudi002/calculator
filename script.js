@@ -16,6 +16,7 @@ function appendOperator(input) {
   }
 }
 
+
 function performCalculation() {
   if (expression !== "") {
     expression += display.value;
