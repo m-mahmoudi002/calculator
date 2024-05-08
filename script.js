@@ -16,6 +16,27 @@ function appendOperator(input) {
   }
 }
 
+function power(input) {
+  if (display.value !== "") {
+    expression += display.value + input;
+    display.value = "";
+    if (input === "r") {
+      let index = expression.indexOf("r");
+      if (index !== -1 && index > 0 && index < expression.length - 2) {
+        let x = expression[index - 1];
+        let y = expression[index + 2];
+        let replacedExpression = expression.replace(
+          "r",
+          `Math.pow(${x}, ${y})`
+        );
+        expression = replacedExpression;
+        return expression;
+      }
+    }
+  }
+}
+
+
 
 function performCalculation() {
   if (expression !== "") {
